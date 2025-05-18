@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+    <div id="inputContainer">
+        <label for="input">Enter the marks of sections:</label>
+        <input id="input" type="text" placeholder="enter score(s)">
+        <button type="submit" id="submit">calculate</button>
+    </div>
+    <div id="displayContainer">
+        <p>The score is : <span id="scoreDisplay">0</span></p>
+        <p>The letter grade is : <span id="gradeDisplay">A</span></p>
+        <p>You have <span id="passOrFailDisplay">passed</span> the test.</p>
+    </div>
+    <button id="printScores">print Scores</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
