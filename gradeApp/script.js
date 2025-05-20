@@ -23,6 +23,9 @@ let totalScore = submit.addEventListener("click", ()=>{
         if(isNaN(total)){
             window.alert("Not a valid number!");
         }
+        else if(input===""){
+            window.alert("Enter a mark to begin!");
+        }
         else{
             console.log(total);
             calculateGrades(total);
@@ -75,7 +78,7 @@ let isPassed = (totalScore) => {
             return true;
         }
         else{
-            updateResult(totalScore, isPassed);
+            updateResult(totalScore, !isPassed);
             return false;
         }
     }
@@ -92,6 +95,7 @@ function updateResult(totalScore, isPassed){
             scoreDisplay.textContent = `${totalScore}%`;
             passOrFailDisplay.classList.add("green");
             scoreDisplay.classList.add("green");
+            input.value = "";
 
         }
         else{
@@ -99,6 +103,7 @@ function updateResult(totalScore, isPassed){
             scoreDisplay.textContent = `${totalScore}%`;
             passOrFailDisplay.classList.add("red");
             scoreDisplay.classList.add("red");
+            input.value = "";
         }
     }
     catch(error){

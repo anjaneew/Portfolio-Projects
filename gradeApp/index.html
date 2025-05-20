@@ -8,15 +8,17 @@
 </head>
 <body>
     <div id="container">
+        <h1>Grade Calculator App</h1>
     <div id="inputContainer">
-        <label for="input">Enter the marks of sections:</label>
-        <input id="input" type="text" placeholder="enter score(s)">
+        <label for="input" id="inputLabel">Enter the marks of sections:</label><br>
+        <small>(multiple marks seperated by '<span id="comma">,</span>')</small><br>
+        <input id="input" type="text" placeholder="enter mark(s)"><br>
         <button type="submit" id="submit">calculate</button>
     </div>
     <div id="displayContainer">
         <p>The score is : <span id="scoreDisplay">0</span></p>
-        <p>The letter grade is : <span id="gradeDisplay">A</span></p>
-        <p>You have <span id="passOrFailDisplay">passed</span> the test.</p>
+        <p>The letter grade is : <span id="gradeDisplay">??</span></p>
+        <p>You have <span id="passOrFailDisplay">??</span> the test.</p>
     </div>
     <button id="printScores">print Scores</button>
     </div>
