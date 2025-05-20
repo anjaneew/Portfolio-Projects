@@ -1,0 +1,10 @@
+body{
+    background-image: linear-gradient(to right, rgb(131, 177, 181) , rgb(97, 190, 100)) ;
+    background-position: cover;
+    display: flex;
+    flex-direction: column;
+}
+.images{
+    width: 400px;
+    height:400px
+}
