@@ -1,0 +1,30 @@
+body{
+    background-color: hsla(0, 8%, 17%, 0.836);
+}
+
+.dish{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+fieldset{
+    width: 250px;
+}
+
+
+
+details{
+    background-color: hsla(175, 37%, 80%, 0.192);
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+#input-container{
+    border: 2px solid white;
+    padding: 20px;
+}
+
+.center{
+    text-align: center;
+}

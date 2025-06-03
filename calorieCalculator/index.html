@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Calculator</title>
+    <link rel="stylesheet" href="styles.css" >
+</head>
+<body>
+    <header>
+        <h1 class="center">
+            Calorie Calculator
+        </h1>
+        <hr>
+    </header>
+<main>
+    
+        <div id="input-container">
+            <form id="food-items">
+            <h2 class="center">Food Items </h2>
+            <p class="center">Select the food items:</p>
+
+            <details>
+                <summary class="meal">
+                    Main Dish
+                </summary>
+                <fieldset>
+                    <legend>Rice 🍚</legend>
+                    <img src="images/rice.jpg" class="dish" alt="rice"> <br>
+                    <p><input class="food-weight" type="number" id="rice">g</p>
+                </fieldset> 
+                <fieldset>
+                <legend>Bread 🍞</legend>
+                <img src="images/bread.jpg" class="dish" alt="bread"> <br>
+                 <p><input class="food-weight" type="number" id="bread">g</p>
+                </fieldset>
+                            <fieldset>
+                    <legend>Hoppers 🥞</legend>
+                    <img src="images/hoppers.jpg" class="dish" alt="hoppers"> <br>
+                    <p><input class="food-weight" type="number" id="hoppers"> hoppers</p>
+                </fieldset>
+                            <fieldset>
+                    <legend>String Hoppers 🍜</legend>
+                    <img src="images/string-hoppers.jpg" class="dish" alt="string-hoppers"> <br>
+                    <p><input class="food-weight" type="number" id="string-hoppers"> string hoppers</p>
+                </fieldset>
+                            <fieldset>
+                    <legend>Egg Hoppers 🍳</legend>
+                    <img src="images/egg-hoppers.jpg" class="dish" alt="egg-hoppers"> <br>
+                    <p><input class="food-weight" type="number" id="egg-hoppers"> egg hoppers</p>
+                </fieldset>
+                            <fieldset>
+                    <legend>Roti 🫓</legend>
+                    <img src="images/roti.jpg" class="dish" alt="roti"> <br>
+                    <p><input class="food-weight" type="number" id="roti">g</p>
+                </fieldset>
+                <fieldset>
+                    <legend>Jackfruit 🌰</legend>
+                    <img src="images/jackfruit.jpg" class="dish" alt="jackfruit"> <br>
+                    <p><input class="food-weight" type="number" id="jackfruit">g</p>
+                </fieldset> 
+            </details>
+
+            <details>
+                <summary class="meal">
+                    Curries
+                </summary>
+                <fieldset>
+                    <legend>Chicken 🍗</legend>
+                    <img src="images/chicken.jpg" class="dish" alt="chicken"> <br>
+                    <p><input class="food-weight" type="number" id="chicken">g</p>
+                </fieldset>
+                <fieldset>
+                    <legend>Fish 🐟</legend>
+                    <img src="images/fish.jpg" class="dish" alt="fish"> <br>
+                    <p><input class="food-weight" type="number" id="fish">g</p>
+                </fieldset>
+                <fieldset>
+                <legend>Pol Sambol 🥥</legend>
+                <img src="images/pol-sambol.jpg" class="dish" alt="pol-sambol"> <br>
+                 <p><input class="food-weight" type="number" id="pol-sambol">g</p>
+                </fieldset>
+                            <fieldset>
+                    <legend>Carrot 🥕</legend>
+                    <img src="images/carrot.jpg" class="dish" alt="carrot"> <br>
+                    <p><input class="food-weight" type="number" id="carrot">g</p>
+                </fieldset>
+                            <fieldset>
+                    <legend>Beet🧃</legend>
+                    <img src="images/beet.jpg" class="dish" alt="beet"> <br>
+                    <p><input class="food-weight" type="number" id="beet">g</p>
+                </fieldset>
+                            <fieldset>
+                    <legend>Beans 🫘</legend>
+                    <img src="images/beans.jpg" class="dish" alt="beans"> <br>
+                    <p><input class="food-weight" type="number" id="beans">g</p>
+                </fieldset>
+                            <fieldset>
+                    <legend>Dhal 🟠</legend>
+                    <img src="images/dhal.jpg" class="dish" alt="dhal"> <br>
+                    <p><input class="food-weight" type="number" id="dhal">g</p>
+                </fieldset>
+            </details>
+
+            <details>
+                <summary class="meal">
+                    Side Dish
+                </summary>
+                <fieldset>
+                    <legend>Boiled Egg 🥚</legend>
+                    <img src="images/boiled-egg.jpg" class="dish" alt="boiled-egg"><br><p>
+                    <input class="food-weight" type="number" id="boiled-egg">egg(s)</p>
+                </fieldset>
+                <fieldset>
+                    <legend>Fried Egg 🍳</legend>
+                    <img src="images/fried-egg.jpg" class="dish" alt="fried-egg"><br><p>
+                    <input class="food-weight" type="number" id="fried-egg">egg(s)</p>
+                </fieldset>
+                <fieldset>
+                    <legend>Gotu Kola Mallung 🥬</legend>
+                    <img src="images/gotu-kola-mallung.jpg" class="dish" alt="gotu-kola-mallung"> <br>
+                    <p><input class="food-weight" type="number" id="gotu-kola-mallung">g</p>
+                </fieldset>
+            </details>
+
+            <details>
+                <summary class="meal">
+                    Fruits
+                </summary>
+                <fieldset>
+                    <legend>Banana 🍌</legend>
+                    <img src="images/banana.jpg" class="dish" alt="banana"> <br>
+                    <p><input class="food-weight" type="number" id="banana">bananas</p>
+                </fieldset>
+            </details>
+
+            <details>
+                <summary class="meal">
+                    Drinks and Desserts
+                </summary>
+                <fieldset>
+                <legend>Milk Tea 🍵</legend>
+                    <img src="images/milk-tea.jpg" class="dish" alt="milk-tea"> <br>
+                    <p><input class="food-weight" type="number" id="milk-tea">cup(s)</p>
+                </fieldset>
+                <fieldset>
+                    <legend>Curd Treacle 🍮</legend>
+                    <img src="images/curd-treacle.jpg" class="dish" alt="curd-treacle"> <br>
+                    <p><input class="food-weight" type="number" id="curd-treacle">cup(s)</p>
+                </fieldset>
+                <fieldset>
+                    <legend>Ice Cream 🍨</legend>
+                    <img src="images/ice-cream.jpg" class="dish" alt="ice-cream"> <br>
+                    <p><input class="food-weight" type="number" id="ice-cream">cup(s)</p>
+                </fieldset>
+            </details>
+
+            <!-- <fieldset><legend></legend><img src="images/.jpg" class="dish" alt=""><br><p><input class="food-weight" type="number" id="">g</p></fieldset> -->
+            <button type="button" id="submitBtn" class="center">Calculate</button>
+        </form>
+
+        </div>
+        <div id="results-container" class="results hide center">
+            <ul id="list-display">
+
+            </ul>
+            <h3 class="center">The total calorie intake: <span id="total-display">0</span></h3>
+        </div>
+        
+</main>
+<footer>
+<hr>
+
+<hr>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
