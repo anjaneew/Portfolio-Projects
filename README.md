@@ -12,6 +12,7 @@ Key features include:
 
 
 Project 2: Calorie Calculator App
+
            HTML, CSS, JavaScript
 
 
