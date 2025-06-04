@@ -95,6 +95,10 @@ a{
     
 }
 
+a:hover {
+  transform: scale(1.25);
+}
+
 .flex-child{
 cursor: pointer;
 }
