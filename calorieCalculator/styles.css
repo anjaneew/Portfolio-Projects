@@ -121,6 +121,7 @@ button:focus{
     position: sticky;
     bottom: 0;
     background-color: #0f0f0f;
+    border: 2px solid #e0e0e0;
 }
 
 
