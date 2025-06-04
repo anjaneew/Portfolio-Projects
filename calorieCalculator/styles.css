@@ -77,6 +77,35 @@ input:focus {
     background-color:whitesmoke;
 }
 
+#flex-contact-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-text{
+    text-align: center;
+    color: #0073b1;
+}
+
+a{
+    font-size: 3rem;
+    color: #0073b1;
+    
+}
+
+.flex-child{
+cursor: pointer;
+}
+
+#flex-btn-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
 button{
     padding: 10px 20px;
     border: none;
@@ -85,7 +114,6 @@ button{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2em;
     margin-top: 20px;
-    margin-left: 30px;
     cursor: pointer;
     background-color: rgb(41, 160, 150);
     box-shadow: 5px 5px 2px black;

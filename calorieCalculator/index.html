@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calorie Calculator</title>
-    <link rel="stylesheet" href="styles.css" >
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
     <header>
@@ -182,35 +184,35 @@
             
                  <div class="flex-items">
                 <fieldset>
-                    <legend>Cashew</legend>
+                    <legend>Cashew 🥜</legend>
                     <img src="images/cashew.jpg" class="dish" alt="cashew"> <br>
                     <p><input class="food-weight" type="number"  min="1" id="cashew">g</p>
                 </fieldset></div>
 
                 <div class="flex-items">
                 <fieldset>
-                    <legend>Guava (pera)</legend>
+                    <legend>Guava (pera) 🍐</legend>
                     <img src="images/pera.jpg" class="dish" alt="pera"> <br>
                     <p><input class="food-weight" type="number"  min="1" id="pera">g</p>
                 </fieldset></div>
 
                 <div class="flex-items">
                 <fieldset>
-                    <legend>Jambu (water apple)</legend>
+                    <legend>Jambu (water apple) 🍒</legend>
                     <img src="images/jambu.jpg" class="dish" alt="jambu"> <br>
                     <p><input class="food-weight" type="number"  min="1" id="jambu">g</p>
                 </fieldset></div>
 
                 <div class="flex-items">
                 <fieldset>
-                    <legend>Orange</legend>
+                    <legend>Orange 🍊</legend>
                     <img src="images/orange.jpg" class="dish" alt="orange"> <br>
                     <p><input class="food-weight" type="number"  min="1" id="orange">g</p>
                 </fieldset></div>
 
                 <div class="flex-items">
                 <fieldset>
-                    <legend>Watermelon</legend>
+                    <legend>Watermelon 🍉🍈</legend>
                     <img src="images/watermelon.jpg" class="dish" alt="watermelon"> <br>
                     <p><input class="food-weight" type="number"  min="1" id="watermelon">g</p>
                 </fieldset></div>
@@ -249,7 +251,7 @@
 
                 <div class="flex-items">
                 <fieldset>
-                    <legend>Chocolate</legend>
+                    <legend>Chocolate 🍫</legend>
                     <img src="images/chocolate.jpg" class="dish" alt="chocolate"> <br>
                     <p><input class="food-weight" type="number"  min="1" id="chocolate">g</p>
                 </fieldset></div>
@@ -266,26 +268,32 @@
 
 
 
-             <div id="button-container">
+            <div id="button-container">
+            <div id="flex-btn-box">
             <button type="button" id="submit-btn" class="center">Calculate</button>
             <button type="reset" id="reset-btn" class="center">Clear</button>
-                <div id="results-container" class="results hide center">
-            <ul id="list-display">
+            </div>    
+            
 
-            </ul>
-            <h3 class="center">The total calorie intake:   <br><span id="total-display"> 0 </span> calories</h3>
-        </div>
-        </div>
-        </form>
+            <div id="results-container" class="results hide center">
+            <h3 class="center">The total calorie intake:   <br>
+                <span id="total-display"> 0 </span> calories</h3>
+            </div>
 
-        
+            </div>
 
-        
+        </form>  
 </main>
 <footer>
-<hr>
-
-<hr>
+<hr class="footer-text">
+    <p class="footer-text">&copy; 2025 ~ Anjanee S. Wijewardana  ~ All rights reserved.</p>
+    <div id="flex-contact-box">
+    <a href="mailto:anjaneew@gmail.com" target="_blank" class="flex-child" alt="send mailto anjaneew@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    <a href="https://github.com/anjaneew" target="_blank" class="flex-child" alt="https://github.com/anjaneew"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/anjaneew/" target="_blank" class="flex-child" alt="https://www.linkedin.com/in/anjaneew/"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+    
+<hr class="footer-text">
 </footer>
     <script src="script.js"></script>
 </body>
