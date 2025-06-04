@@ -12,19 +12,37 @@ const stringHoppers = document.getElementById("string-hoppers");
 const eggHoppers = document.getElementById("egg-hoppers");
 const roti = document.getElementById("roti");
 const jackfruit = document.getElementById("jackfruit");
+const chicken = document.getElementById("chicken");
+const fish = document.getElementById("fish");
+const polSambol = document.getElementById("pol-sambol");
+const carrot = document.getElementById("carrot");
+const beet = document.getElementById("beet");
+const beans = document.getElementById("beans");
 const dhal = document.getElementById("dhal");
 const boiledEgg = document.getElementById("boiled-egg");
 const friedEgg = document.getElementById("fried-egg");
 const gotuKolaMallung = document.getElementById("gotu-kola-mallung");
 const banana = document.getElementById("banana");
+const cashew = document.getElementById("cashew");
+const pera = document.getElementById("pera");
+const jambu = document.getElementById("jambu");
+const orange = document.getElementById("orange");
+const watermelon = document.getElementById("watermelon");
+
 const milkTea = document.getElementById("milk-tea");
 const curdTreacle = document.getElementById("curd-treacle");
 const iceCream = document.getElementById("ice-cream");
-const carrot = document.getElementById("carrot");
+const chocolate = document.getElementById("chocolate");
+
+// const  = document.getElementById("");
+
 let inputWeights = 0;
 
 
-const foodList = new Map([["rice", 1.3], ["bread",2.65], ["hoppers",3.62], ["string-hoppers",1.3], ["egg-hoppers", 2.2], ["roti",2.83], ["jackfruit",0.95], ["chicken", 1.65], ["fish", 1.12], ["pol-sambol",2.62], ["carrot", 0.41 ], ["beet", 0.44], ["beans",0.35], ["dhal", 1.16], ["boiled-egg", 78], ["fried-egg",90], ["gotu-kola-mallung",0.40], ["banana", 72], ["milk-tea",92], ["curd-treacle",180], ["ice-cream",162]]);
+const foodList = new Map([["rice", 1.3], ["bread",2.65], ["hoppers",3.62], ["string-hoppers",1.3], ["egg-hoppers", 2.2], ["roti",2.83], ["jackfruit",0.95], ["chicken", 1.65], ["fish", 1.12], ["pol-sambol",2.62], ["carrot", 0.41 ], ["beet", 0.44], ["beans",0.35], ["dhal", 1.16], ["boiled-egg", 78], ["fried-egg",90], ["gotu-kola-mallung",0.40], ["banana", 72] , ["cashew" ,5.53 ], ["pera" ,0.68 ], ["jambu" , 0.54], [ "orange",0.47 ], [ "watermelon", 0.30], ["milk-tea",92], ["curd-treacle",180], ["ice-cream",162], ["chocolate" , 5.35]]);
+
+
+// , ["", ]
 
 const foodsArray = Array.from(document.querySelectorAll("input"));
 // console.log(foodsArray);
@@ -52,8 +70,11 @@ const calculate = () => {
             totalCalories += Number(element.value.trim()) * foodList.get(element.id);
         } 
     });
-//  console.log(totalCalories);
-    totalDisplay.textContent = totalCalories;
+
+    // totalDisplay.textContent = totalCalories;
+    totalDisplay.textContent = totalCalories.toFixed();
+
+    console.log(totalCalories);
 
     foodsArray.forEach(element => {
         element.value = "";
