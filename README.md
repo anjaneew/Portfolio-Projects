@@ -9,3 +9,16 @@ Key features include:
   * Calculates and displays total score and letter grade instantly.
   * Pass/fail evaluation with color-coded feedback.
   * "Print Scores" button for generating a printable view of the results.
+
+
+Project 2: Calorie Calculator App                                                                                                                 
+           HTML, CSS, JavaScript
+
+
+Calorie Calculator is a local browser-based Sri Lankan food calorie calculator built with HTML, CSS, and JavaScript. Users can select food items from categorized collapsible sections, enter quantities, and calculate the total calorie intake dynamically.
+
+Key features include:
+ * Categorized food input with collapsible sections
+ * Dynamic calorie calculation
+ * Image-based UI for familiarity
+ * Responsive design
