@@ -1,0 +1,32 @@
+body{
+    background-color: #9b9bd3;
+}
+#logo{
+    width: 50px;
+}
+
+#header{
+    text-align: center;
+    color: white;
+    background-color: #43437e;
+    padding: 50px;
+    font-size: 2em;
+}
+#container{
+    text-align: center;
+    font-size: 2em;
+    padding: 50px;
+}
+#text-input{
+    margin: 10px;
+    height: 30px;
+    width: 400px;
+}
+#check-btn{
+    font-size: 1em;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: hsl(240, 31%, 38%);
+    color: white;
+}
