@@ -1,23 +1,57 @@
 body{
-    background-color: hsla(0, 8%, 17%, 0.836);
+    /* background-color: hsla(180, 85%, 8%, 0.89); */
+    background-color: #0f0f0f;
+    /* color: rgb(204, 224, 247); */
+    color: #e0e0e0;
+    font-size: 1.2em;
 }
 
 .dish{
     height: 200px;
     width: 200px;
     object-fit: cover;
+    border-radius: 20px;
+}
+
+input{
+    margin-right: 10px;
+    padding: 2px;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 fieldset{
-    width: 250px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+   text-align: center;
+   padding: 20px;
+   border-radius: 20px;
+   margin-bottom: 20px;
 }
 
+legend{
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    padding: 0.2em 0.5em;
+    word-wrap: break-word;
+}
 
+.flex-container{
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: center;
+}
+
+.food-weight{
+    width: 50px;
+}
 
 details{
-    background-color: hsla(175, 37%, 80%, 0.192);
+    background-color: hsla(330, 5%, 15%, 0.699);
     margin-bottom: 20px;
-    width: 300px;
+    padding: 10px;
+    
 }
 
 #input-container{
@@ -27,4 +61,97 @@ details{
 
 .center{
     text-align: center;
+}
+
+#input-container{
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+input{
+    background-color: rgb(130, 236, 196);
+}
+
+input:focus {
+    outline: 2px solid rgb(130, 236, 196);
+    background-color:whitesmoke;
+}
+
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    margin: 10px;
+    cursor: pointer;
+    background-color: rgb(41, 160, 150);
+    box-shadow: 5px 5px 2px black;
+}
+
+button:hover {
+    background-color:  rgb(120, 226, 217);
+    box-shadow: 2px 2px 1px rgb(46, 43, 43);
+}
+
+button:active{
+    background-color: rgb(153, 233, 226);
+   box-shadow:  5px 5px 2px  rgba(58, 230, 149, 0.438);
+}
+
+button:focus{
+    outline: 2px solid rgb(108, 110, 105);
+}
+
+#results-container{
+    padding: 2px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: rgb(147, 185, 229);
+    border-radius: 20px;
+}
+
+#total-display{
+    color: rgb(100, 223, 196);
+}
+
+#button-container{
+    margin-top: 20px;
+    position: sticky;
+    bottom: 0;
+}
+
+
+@media (max-width: 600px) {
+
+    .flex-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dish{
+        width: 100px;
+        height: 100px;
+    }
+
+    details{
+        margin-bottom: 10px;
+        padding: 20px;
+        width: 90%vh;
+    }
+
+    fieldset{
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    margin: none;
+    }
+
+    legend{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+
 }
