@@ -20,7 +20,7 @@ const banana = document.getElementById("banana");
 const milkTea = document.getElementById("milk-tea");
 const curdTreacle = document.getElementById("curd-treacle");
 const iceCream = document.getElementById("ice-cream");
-// const  = document.getElementById("");
+const carrot = document.getElementById("carrot");
 let inputWeights = 0;
 
 
