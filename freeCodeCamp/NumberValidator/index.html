@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telephone Number Validator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quintessential&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h3 id="logoTitle">freeCodeCamp  </h3>
+    <h1>Telephone Number Validator</h1>
+    <div id="container">
+        <div id="displayContainer">
+            <label for="user-input" id="inputLabel">Enter a Phone Number:</label>
+            <input id="user-input" type="text">
+            <p id="results-div"></p>
+        </div><br>
+        <div id="btnContainer">
+            <button id="check-btn" onclick="validateNumber()">Check</button>
+            <button id="clear-btn" onclick="reset()">Clear</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
