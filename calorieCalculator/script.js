@@ -24,7 +24,7 @@ const carrot = document.getElementById("carrot");
 let inputWeights = 0;
 
 
-const foodList = new Map([["rice", 1.3], ["bread",2.65], ["hoppers",3.62], ["string-hoppers",1.3], ["egg-hoppers", 2.2], ["roti",2.83], ["jackfruit",0.95], ["chicken", 1.65], ["fish", 1.12], ["pol-sambol",2.62], ["beet",0.44], ["beans",0.35], ["dhal", 1.16], ["boiled-egg", 78], ["fried-egg",90], ["gotu-kola-mallung",0.40], ["banana", 72], ["milk-tea",92], ["curd-treacle",180], ["ice-cream",162]]);
+const foodList = new Map([["rice", 1.3], ["bread",2.65], ["hoppers",3.62], ["string-hoppers",1.3], ["egg-hoppers", 2.2], ["roti",2.83], ["jackfruit",0.95], ["chicken", 1.65], ["fish", 1.12], ["pol-sambol",2.62], ["carrot", 0.41 ], ["beet", 0.44], ["beans",0.35], ["dhal", 1.16], ["boiled-egg", 78], ["fried-egg",90], ["gotu-kola-mallung",0.40], ["banana", 72], ["milk-tea",92], ["curd-treacle",180], ["ice-cream",162]]);
 
 const foodsArray = Array.from(document.querySelectorAll("input"));
 // console.log(foodsArray);
