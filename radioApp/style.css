@@ -1,0 +1,94 @@
+body{
+    background-color: rgb(15, 11, 11);
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+main{
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+}
+
+#radio-container{
+    background-color: #0c0921cd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 5px solid rgba(4, 3, 90, 0.546);
+    border-radius: 5px;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 2em;
+}
+
+img{
+    border:2px black solid;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+
+select{
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color:rgba(48, 72, 80, 0.546);
+    color: rgb(241, 240, 238);
+    padding: 5px;
+}
+
+.btn{
+    padding: 10px;
+    background-color: #b5c8d2;
+    font-size: 1.5rem;
+    border-radius: 50px;
+}
+
+footer{
+ background-color: rgb(15, 11, 11);
+}
+
+#flex-contact-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.footer-text{
+    text-align: center;
+    color: #6fafd2;
+    
+}
+
+a{
+    font-size: 3rem;
+    color: #0073b1;
+    transition: transform 0.3s ease 0.05s;
+    
+}
+
+a:hover {  
+  transform: scale(1.25);
+}
+
+.flex-child{
+cursor: pointer;
+}
+
+#flex-btn-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}

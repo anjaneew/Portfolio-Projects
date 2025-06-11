@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <main>
+        <div id="radio-container">
+            <h1>Sri Lankan Radio</h1>
+            <div>
+                <img id="channel-display" src="images/logo.png">
+            </div>
+            
+            <div id="channel-list">
+                 
+                <select id="channel">
+                    <option id="pause" selected>Select Channel</option>
+                    <option id="shaa">ෂා</option>
+                    <option id="sri">ශ්‍රී</option>
+                    <option id="hiru">හිරු</option>
+                    <option id="neth">නෙත්</option>
+                    <option id="sirasa">සිරස</option>
+                    <option id="derana">දෙරණ</option> 
+                    <option id="siyatha">සියත</option>
+                    <option id="lakhada">ලක්හඩ</option>
+                    <option id="city-fm">City FM</option>
+                    <option id="swadesheeya-sewaya">ස්වදේශීය සේවය</option>
+                    
+                </select>
+            </div>
+
+            <div>
+                <audio id="radio" src="" type="audio/mpeg" controls></audio>
+            </div> 
+            <div id="btn-container">
+                <button id="increse-btn" class="btn">🔺</button>
+                <button id="decrease-btn" class="btn">🔻</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <hr class="footer-text">
+        <p class="footer-text">&copy; 2025 ~ Anjanee S. Wijewardana ~  All rights reserved.</p>
+        <div id="flex-contact-box">
+            <a href="mailto:anjaneew@gmail.com" target="_blank" class="flex-child" alt="anjaneew@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/anjaneew" target="_blank" class="flex-child" alt="github profile"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/anjaneew/" target="_blank" class="flex-child" alt="Linkedin profile"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <hr class="footer-text">
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
