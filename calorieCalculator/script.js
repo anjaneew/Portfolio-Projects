@@ -1,4 +1,4 @@
-//Calorie Calculator
+//Sri Lankan Calorie Calculator
 
 const submitBtn = document.getElementById("submit-btn");
 const resetBtn = document.getElementById("reset-btn");
