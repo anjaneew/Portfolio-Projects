@@ -12,23 +12,22 @@
         <div id="radio-container">
             <h1>Sri Lankan Radio</h1>
             <div>
-                <img id="channel-display" src="images/logo.png">
+                <img id="channel-display" src="images/placeholder.png" alt="select a station">
             </div>
+            
             
             <div id="channel-list">
                  
-                <select id="channel">
-                    <option id="pause" selected>Select Channel</option>
-                    <option id="shaa">ෂා</option>
-                    <option id="sri">ශ්‍රී</option>
-                    <option id="hiru">හිරු</option>
-                    <option id="neth">නෙත්</option>
-                    <option id="sirasa">සිරස</option>
-                    <option id="derana">දෙරණ</option> 
-                    <option id="siyatha">සියත</option>
-                    <option id="lakhada">ලක්හඩ</option>
-                    <option id="city-fm">City FM</option>
-                    <option id="swadesheeya-sewaya">ස්වදේශීය සේවය</option>
+                <select id="channel-select">
+                    <option value="pause" selected>Select Channel</option>
+                    <option value="shaa">ෂා</option>
+                    <option value="sri">ශ්‍රී</option>
+                    <option value="hiru">හිරු</option>
+                    <option value="neth">නෙත්</option>
+                    <option value="derana">දෙරණ</option> 
+                    <option value="lakhada">ලක්හඩ</option>
+                    <option value="city-fm">City FM</option>
+                    <option value="swadesheeya-sewaya">ස්වදේශීය සේවය</option>
                     
                 </select>
             </div>
@@ -37,9 +36,10 @@
                 <audio id="radio" src="" type="audio/mpeg" controls></audio>
             </div> 
             <div id="btn-container">
-                <button id="increse-btn" class="btn">🔺</button>
-                <button id="decrease-btn" class="btn">🔻</button>
+                <button id="increase-btn" class="btn" type="button">🔺</button>
+                 <button id="decrease-btn" class="btn" type="button">🔻</button>
             </div>
+            
         </div>
     </main>
     <footer>

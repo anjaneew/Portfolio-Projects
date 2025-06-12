@@ -24,6 +24,20 @@ Key features include:
  * Responsive design
 
 
+Project 3: Sri Lankan Radio App
+
+            HTML, CSS, JavaScript
+
+Sri Lankan Radio is a browser-based online radio streaming app built with HTML, CSS, and JavaScript. Users can select from a list of popular Sri Lankan radio stations and stream live broadcasts directly in their browser.
+
+Key features include:
+* Dropdown channel selector with Sinhala station names
+* Dynamic audio streaming via embedded player
+* Channel-specific display image updates
+* Volume control buttons
+* Responsive layout and hover effects
+* Graceful error handling for unavailable streams
+--------------------------------------------------------------------------------------
 FreeCodeCamp Certification Projects:
 
 Project I Palindrome Checker

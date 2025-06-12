@@ -3,6 +3,7 @@ body{
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 main{
     display: flex;
     justify-content: center;
@@ -36,21 +37,53 @@ img{
 
 select{
     text-align: center;
-    border: 1px solid rgb(255, 255, 255);
+    border: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 10px;
     margin-top: 10px;
-    background-color:rgba(48, 72, 80, 0.546);
+    background-color:rgba(86, 143, 218, 0.546);
     color: rgb(241, 240, 238);
     padding: 5px;
 }
 
+
+select:focus{
+        font-weight: bold;
+        box-shadow: 2px 2px 2px rgb(243, 243, 241);
+}
+
+select:active{
+        font-weight: bold;
+        box-shadow: 1px 1px 1px rgb(243, 243, 241);
+}
+
+option{
+     background-color:rgba(86, 143, 218, 0.546);
+}
+
 .btn{
     padding: 10px;
-    background-color: #b5c8d2;
+    background-color: rgba(86, 143, 218, 0.546);
     font-size: 1.5rem;
     border-radius: 50px;
+    border: none;
+    box-shadow: 2px 2px 2px rgb(20, 28, 29);
+}
+
+.btn:focus{
+    background-color: #09b0e8;
+    box-shadow: 1px 1px 2px rgb(32, 32, 23);
+}
+
+.btn:hover{
+    background-color: #87c4e5;
+    box-shadow: none;
+}
+
+.btn:active{
+    background-color: #7dbee1;
+    box-shadow: none;
 }
 
 footer{
@@ -67,15 +100,13 @@ footer{
 
 .footer-text{
     text-align: center;
-    color: #6fafd2;
-    
+    color: #6fafd2;  
 }
 
 a{
     font-size: 3rem;
     color: #0073b1;
-    transition: transform 0.3s ease 0.05s;
-    
+    transition: transform 0.3s ease 0.05s;  
 }
 
 a:hover {  
@@ -91,4 +122,27 @@ cursor: pointer;
     flex-direction: row;
     justify-content: center;
     gap: 20px;
+}
+
+@media only screen and (max-width: 600px){
+
+    #radio-container{
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: 2px solid rgba(4, 3, 90, 0.546);
+    }
+
+    img{
+        border:1px black solid;
+        width: 150px;
+        height: 150px;
+        margin-bottom: 2px;
+    }
+
+    select{
+        font-size: 1.2rem;
+        padding: 5px;
+    }
+
 }
