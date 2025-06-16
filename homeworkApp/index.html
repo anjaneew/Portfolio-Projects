@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="flex-container">
+            <h1>Homework App</h1>
+            <div id="input-container" class="box">
+                <label for="title-input">Title:</label>
+                <input id="title-input" type="text" class="input" placeholder="enter title"><br>
+                <label for="details-input">Details:</label>
+                <input id="details-input" type="text" class="input" placeholder="enter details"><br>
+                <label for="date-input">Due date:</label>
+                <input id="date-input" type="date" class="input"><br>
+            </div>
+            <div id="search-container" class="box hide">
+                <label for="search-input">Search</label>
+                <input id="search-input" type="text" class="input" placeholder="enter task number or title">
+                <button id="search-btn" type="button">Search</button>
+            </div>
+            <div id="button-container" class="box">
+                <button id="add-btn" type="button">Add Task</button>
+                <button id="save-btn" type="button">Save</button>
+                <button id="delete-btn" type="button">Delete</button>
+                <button id="clear-btn" type="button">Clear Memory</button>
+            </div>
+            <div id="display-container" class="box">
+                <h2>Homework Tasks</h2>
+            </div>
+        </div>
+        
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+</html>
