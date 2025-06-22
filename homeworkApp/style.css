@@ -8,12 +8,20 @@ h1, h2{
     color: antiquewhite;
 }
 
+#flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .box{
     border: 2px solid rgb(5, 29, 53);
     margin: 5px 10px;
     padding: 10px;
     background-color: #a58a69;
     color: antiquewhite;
+    width: 500px;
 }
 
 input, button {
@@ -76,3 +84,10 @@ th,td{
 .added .updated .deleted .error{
     display: none;
 } */
+
+
+@media (max-width: 600){
+    .box{
+        width: 100%;
+    }
+}
