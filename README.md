@@ -37,6 +37,23 @@ Key features include:
 * Volume control buttons
 * Responsive layout and hover effects
 * Graceful error handling for unavailable streams
+
+
+Project 4: Homework App
+
+            HTML, CSS, JavaScript
+
+Homework Task Manager is a browser-based task management application built with vanilla JavaScript. Users can create, organize, and track their homework assignments with data persistence through localStorage.
+
+Key features include:
+* Complete CRUD functionality (Create, Read, Update, Delete)
+* Persistent storage using browser's localStorage API
+* Search tasks by title or position number
+* Input validation and sanitization
+* Responsive table display with clear task visualization
+* One-click memory clearing option
+* Graceful error handling throughout operations
+
 --------------------------------------------------------------------------------------
 FreeCodeCamp Certification Projects:
 
