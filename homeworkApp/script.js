@@ -7,6 +7,7 @@ const dateInput = document.getElementById("date-input");
 const searchInput = document.getElementById("search-input");
 
 const displayTasks = document.getElementById("display-tasks");
+const toastContainer = document.getElementById("toast-container");
 
 //buttons
 const searchBtn = document.getElementById("search-btn");
@@ -27,7 +28,7 @@ const saveToMemory = () => {
     }
 };
 
-const add = () => {//
+const add = () => {
     try {
         const title = validateInput(titleInput.value);
         const details = validateInput(detailsInput.value);
@@ -76,7 +77,7 @@ const save = (title, details, date) => {
         //saving to memory
         console.log("updated list: "+ tasks); 
         saveToMemory();
-        alert("Task saved successfully.");    
+        // alert("Task saved successfully.");    
     } catch (error) {
          console.error(error);
     }
@@ -95,7 +96,7 @@ const update = () => {//
         saveToMemory();
         cleanInput();
         display(); 
-        alert("task succeessfully updated.");
+        // alert("task succeessfully updated.");
 
     } catch (error) {
          console.error(error);
@@ -112,7 +113,7 @@ const validateInput = (text) => {
             return cleanText;
         }
         else{
-            alert("Enter a valid title and details.");
+            // alert("Enter a valid title and details.");
             throw new Error("No input detected"); 
         }
         
@@ -146,7 +147,7 @@ const getIndex = () => {
             }
         }
         else{
-            return Number(input) - 1;
+            return input - 1;
         }
 
     } catch (error) {
@@ -155,7 +156,7 @@ const getIndex = () => {
 };
 
 
-const smartSearch = () => { //
+const smartSearch = () => { 
     try {
         currentIndex = getIndex();
         titleInput.value = tasks[currentIndex].title;
@@ -178,17 +179,17 @@ const deleteTask = () => {//
         saveToMemory();
         display();
         cleanInput();
-        alert("Task deleted successfully.");
+        // alert("Task deleted successfully.");
         
     } catch (error) {
          console.error(error);
     }
 };
 
-const clearMemory = () => {//
+const clearMemory = () => {
     try {
         localStorage.removeItem("homeworkList");
-        alert("Memory cleared");
+        console.log("Memory cleared");
         tasks = [];
         display();
         cleanInput();
@@ -196,6 +197,14 @@ const clearMemory = () => {//
          console.error(error);
     }
 };
+
+showNotification(added);
+
+const showNotification = (message) => {
+    setTimeout((message) => {
+        toastContainer.innerHTML = `.${message}`.display = "block";
+    }, 3000);
+}
 
 display();
 

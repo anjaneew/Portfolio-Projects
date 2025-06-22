@@ -1,11 +1,53 @@
+body{
+    background-color: #805e33;
+
+}
+
+h1, h2{
+    text-align: center;
+    color: antiquewhite;
+}
+
 .box{
-    border: 2px solid rgb(247, 23, 161);
+    border: 2px solid rgb(5, 29, 53);
     margin: 5px 10px;
     padding: 10px;
+    background-color: #a58a69;
+    color: antiquewhite;
 }
 
 input, button {
     margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+button:active{
+    box-shadow: none;
+    background-color: bisque;
+    font-weight: bold;
+}
+
+button:hover{
+    box-shadow: none;
+    background-color:  rgb(247, 204, 151);
+    font-weight: bold;
+}
+
+
+button:focus{
+    background-color: rgb(247, 204, 151);
+    font-weight: bold;
+}
+
+input:focus{
+    box-shadow: rgb(164, 216, 105) 2px 2px 2px;
+}
+
+button{
+    background-color: rgb(201, 161, 112);
+    cursor: pointer;
+    box-shadow: rgb(58, 57, 55) 2px 2px 2px;
 }
 
 table, tr{
@@ -15,3 +57,22 @@ table, tr{
 th,td{
     padding: 2px 5px;
 }
+
+/* .toast{
+    background-color: hsla(0, 3%, 12%, 0.445);
+    color: aliceblue;
+    padding: 10px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    width: 250px;
+
+}
+
+.icon{
+    padding: 5px;
+}
+
+.added .updated .deleted .error{
+    display: none;
+} */
