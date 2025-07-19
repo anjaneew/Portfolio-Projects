@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freeCodeCamp RPG Creature Search App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libertinus+Mono&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <h2>freeCodeCamp (🔥)</h2>
+        <h1>RPG Creature Search App</h1>
+    </div>
+    <div id="main">
+        <div id="search">
+            <label for="search-input">Search for Creature Name or ID:</label><br>
+            <input id="search-input" type="text" required>
+            <button id="search-button">Search</button>
+        </div>
+        <div id="results1">
+            <h3 id="creature-name">PYROLYNX</h3>
+            <p id="creature-id"></p>
+            <p id="weight"></p>
+            <p id="height"></p>
+            <h4 id="types"></h3>
+        </div>
+        <div id="results2">
+            <table>
+                <tr>
+                    <th>Base</th>
+                    <th>Stats</th>
+                </tr>
+                <tr>
+                    <td>HP:</td>
+                    <td id="hp"></td>
+                </tr>
+                <tr>
+                    <td>Attack:</td>
+                    <td id="attack"></td>
+                </tr>
+                <tr>
+                    <td>Defense:</td>
+                    <td id="defense"></td>
+                </tr>
+                <tr>
+                    <td>Sp. Attack:</td>
+                    <td id="special-attack"></td>
+                </tr>
+                <tr>
+                    <td>Sp. Defense:</td>
+                    <td id="special-defense"></td>                    
+                </tr>
+                <tr>
+                    <td>Speed:</td>
+                    <td id="speed"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="script.js"></script>
+</body>
+</html>
