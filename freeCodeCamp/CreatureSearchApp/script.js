@@ -18,12 +18,10 @@ const speedText = document.getElementById("speed");
 const fetchData = async () => {
     try {
        console.log("button clicked"); 
-       const res = await fetch("https://rpg-creature-api.freecodecamp.rocks/api/creatures");
-       const data = res.json();
+       const inputText = searchInput.value.toLowerCase().trim();
+       const res = await fetch(`https://rpg-creature-api.freecodecamp.rocks/api/creature/${inputText}`);
+       const data = await res.json();
        console.log(data);
-       if(data){
-        console.log("")
-       }
 
     } catch (error) {
         console.error(error);
@@ -31,4 +29,5 @@ const fetchData = async () => {
 };
 
 searchBtn.addEventListener("click", fetchData);
+
 
